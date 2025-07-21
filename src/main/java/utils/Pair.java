@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 // 包含解析后的命令
@@ -28,5 +29,13 @@ public class Pair {
 
     public String command() {
         return command;
+    }
+
+    public List<String> parms() {
+        return Collections.unmodifiableList(parms);
+    }
+
+    public List<String> option() {
+        return Collections.unmodifiableList(option);
     }
 }
